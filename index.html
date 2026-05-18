@@ -4,20 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <style>
-        #city {
-            background-color: tomato;
-            color: white;
-            margin: 20px;
-            padding: 20px;
-        }
-    </style>
+    <title>HTML Forms</title>
 </head>
 
 <body>
-    <h2 id="city">London</h2>
+
+    <form>
+        <input type="text" placeholder="Your name" autofocus>
+        <!-- automatically focus when the page loads -->
+        <input type="text" maxlength="4" size="1">
+        <input type="search"> <!-- same as text -->
+        <input type="password" required> <!--  form will not submit until this field is filled -->
+        <input type="email">
+        <input type="url">
+        <input type="number">
+        <input type="number" min="0" max="100" step="10" value="30">
+        <input type="date">
+        <input type="date" min="2000-01-02" max="2026-01-02">
+        <input type="file">
+        <input type="file" multiple> <!-- can upload multiple files -->
+        <input type="range">
+
+        <!-- checkbox -->
+        <br><br>
+        <input type="checkbox" id="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js">
+        <label for="js">JavaScript</label>
+
+        <!-- radio -->
+        <br><br>
+        <input type="radio" name="gender">
+        <label for="gender">Male</label>
+        <input type="radio" name="gender">
+        <label for="gender">Female</label>
+        <input type="radio" name="gender">
+        <label for="gender">Other</label>
+
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+
 </body>
 
 </html>

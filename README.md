@@ -30,10 +30,8 @@
   - [HTML id Attribute:](#html-id-attribute)
   - [Difference Between class and id:](#difference-between-class-and-id)
 - [HTML Semantic Elements:](#html-semantic-elements)
-- [HTML Forms](#html-forms)
-  - [HTML Form Elements](#html-form-elements)
-  - [HTML Input Types](#html-input-types)
-  - [HTML Input Attributes](#html-input-attributes)
+- [HTML Forms:](#html-forms)
+  - [Common HTML Form Elements:](#common-html-form-elements)
 - [HTML Video](#html-video)
   - [The HTML `<video>` Element](#the-html-video-element)
   - [Autoplay Attribute](#autoplay-attribute)
@@ -869,13 +867,200 @@ Semantic elements means Elements with a meaning. It clearly describes its meanin
 
 ![alt text](./assets/images/html-semantic-element/semantic-element.png)
 
-# HTML Forms
+# HTML Forms:
+The HTML `<form>` element is used to collect user input. Forms are commonly used for login pages, registration forms, contact forms, and many other interactive features.
 
-## HTML Form Elements
+```html
+<!DOCTYPE html>
+<html lang="en">
 
-## HTML Input Types
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
 
-## HTML Input Attributes
+<body>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
+```
+
+![alt text](./assets/images/html-forms/form.png)
+
+## Common HTML Form Elements:
+The HTML `<form>` element can contain one or more of the following form elements:
+
+- `<input>`: It is one of the most used form elements. It can be displayed in several ways, depending on the type attribute.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+
+    <form>
+        <input type="text" placeholder="Your name" autofocus>
+        <!-- automatically focus when the page loads -->
+        <input type="text" maxlength="4" size="1">
+        <input type="search"> <!-- same as text -->
+        <input type="password" required> <!--  form will not submit until this field is filled -->
+        <input type="email">
+        <input type="url">
+        <input type="number">
+        <input type="number" min="0" max="100" step="10" value="30">
+        <input type="date">
+        <input type="date" min="2000-01-02" max="2026-01-02">
+        <input type="file">
+        <input type="file" multiple> <!-- can upload multiple files -->
+        <input type="range">
+
+        <!-- checkbox -->
+        <br><br>
+        <input type="checkbox" id="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js">
+        <label for="js">JavaScript</label>
+
+        <!-- radio -->
+        <br><br>
+        <input type="radio" name="gender">
+        <label for="gender">Male</label>
+        <input type="radio" name="gender">
+        <label for="gender">Female</label>
+        <input type="radio" name="gender">
+        <label for="gender">Other</label>
+
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+</body>
+
+</html>
+```
+![alt text](./assets/images/html-forms/input.png)
+
+- `<label>`: The `<label>` element defines a label for several form elements. The for attribute of the `<label>` tag should be equal to the id attribute of the `<input>` element to bind them together.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
+```
+
+- `<select>` and `<option>`: The `<select>` element defines a drop-down list, and the `<option>` element defines each option within the drop-down list.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+
+    <form>
+        <label for="cars">Choose a car</label>
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="bmw">BMW</option>
+            <option value="audi">AUDI</option>
+            <option value="toyota">TOYOTA</option>
+            <option value="tesla">TESLA</option>
+        </select>
+    </form>
+
+</body>
+
+</html>
+```
+
+![alt text](./assets/images/html-forms/select-and-option.png)
+
+**Note:** By default, the first item in the drop-down list is selected. To define a pre-selected option, add the selected attribute to the `<option>`:
+
+```html
+<option value="toyota" selected>TOYOTA</option>
+```
+
+- `<textarea>`: The `<textarea>` element defines a multi-line input field (a text area):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+
+    <form>
+        <textarea name="message" id="message" rows="10" cols="30"></textarea>
+    </form>
+
+</body>
+
+</html>
+```
+
+![alt text](./assets/images/html-forms/textarea.png)
+
 
 # HTML Video
 
