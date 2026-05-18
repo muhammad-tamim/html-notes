@@ -8,7 +8,7 @@
 - [HTML Paragraph:](#html-paragraph)
   - [HTML Line Breaks](#html-line-breaks)
 - [HTML Text Formatting:](#html-text-formatting)
-- [HTML Comments](#html-comments)
+- [HTML Comments:](#html-comments)
 - [HTML Links](#html-links)
   - [The Target Attribute](#the-target-attribute)
   - [Image as a Link](#image-as-a-link)
@@ -211,7 +211,35 @@ HTML contains several tags for defining text with a special meaning.
 
 ![alt text](./assets/images/html-text-formatting/html-text-formatting.png)
 
-# HTML Comments
+# HTML Comments:
+Comments are not displayed in the browser, but they can help documentation our code.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- This is a comment -->
+    <!-- This is a comment -->
+    <!-- This is a comment -->
+    <!-- This is a comment -->
+    <!-- This is a comment -->
+    <!-- This is a comment -->
+    <!-- This is a comment -->
+    <!-- This is a comment -->
+    <!-- This is a comment -->
+</body>
+
+</html>
+```
+
+![alt text](./assets/images/html-comments/html-comments.png)
 
 # HTML Links
 
