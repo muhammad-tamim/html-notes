@@ -5,8 +5,7 @@
   - [A Simple HTML Document:](#a-simple-html-document)
   - [What is an HTML Element, Tag, and Attribute:](#what-is-an-html-element-tag-and-attribute)
 - [HTML Headings:](#html-headings)
-- [HTML Paragraph](#html-paragraph)
-  - [HTML Paragraph](#html-paragraph-1)
+- [HTML Paragraph:](#html-paragraph)
   - [HTML Line Breaks](#html-line-breaks)
 - [HTML Text Formatting](#html-text-formatting)
 - [HTML Comments](#html-comments)
@@ -128,13 +127,64 @@ HTML Heading are defined with the `<h1>` to `<h6>` tags. `<h1>` defines the most
 
 ![alt text](./assets/images/html-heading/html-heading.png)
 
-# HTML Paragraph
+# HTML Paragraph: 
+The HTML `<p>` tag defines a paragraph. A paragraph always stars on a new line and ignore extra whitespace and line brakes.
 
+```html
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-## HTML Paragraph
+<body>
+    <p>
+        This paragraph
+        contains a lot of lines
+        in the source code,
+        but the browser
+        ignores it.
+    </p>
+
+    <p>
+        This paragraph
+        contains a lot of spaces
+        in the source code,
+        but the browser
+        ignores it.
+    </p>
+
+</body>
+
+</html>
+```
+
+![alt text](./assets/images/html-paragraph/html-paragraph.png)
 
 ## HTML Line Breaks
+The HTML `<br>` tag defines a line break. Use `<br>` tag if you want a line break without starting a new paragraph.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>This is<br>a paragraph<br>with line breaks. </p>
+</body>
+
+</html>
+```
+
+![alt text](./assets/images/html-paragraph/line-breaks.png)
 
 # HTML Text Formatting
 
