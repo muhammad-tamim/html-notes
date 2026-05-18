@@ -20,11 +20,11 @@
 - [HTML Lists:](#html-lists)
   - [Unordered List:](#unordered-list)
   - [Ordered List:](#ordered-list)
-- [HTML Block and Inline Elements](#html-block-and-inline-elements)
+- [HTML Block and Inline Elements:](#html-block-and-inline-elements)
   - [Block Elements](#block-elements)
   - [Inline Elements](#inline-elements)
-  - [Div Element](#div-element)
-  - [Span Element](#span-element)
+  - [Div Element:](#div-element)
+  - [Span Element:](#span-element)
 - [HTML class Attribute](#html-class-attribute)
 - [HTML id Attribute](#html-id-attribute)
 - [HTML Iframe](#html-iframe)
@@ -668,15 +668,82 @@ An ordered list starts with the `<ol>` tag. Each list item stars with the `<li>`
 
 ![alt text](./assets/images/html-lists/order-list-2.png)
 
-# HTML Block and Inline Elements
+# HTML Block and Inline Elements:
+Every HTML element has a default display value, depending on what type of element it is. The two most common display values are block and inline.
 
 ## Block Elements
+A block element always stars on a new line and takes up the full width available (stretches out to left and right as far as it can) also the browsers automatically add some space (a margin) before and after the element. 
+
+Here are some common block-level elements in HTML:
+```html
+<div>, <footer>, <form>, <h1>-<h6>, <p>, <header>, <ol>, <ul>,  <li>, <main>, <nav>, <section>, <table>
+```
 
 ## Inline Elements
+An inline element does not start on a new line and only takes up as much width as necessary. 
 
-## Div Element
+Here are some common inline elements in HTML:
+```html
+<a>, <br>, <button>, <img>, <input>, <label>, <select>, <small>, <span>, <strong>, <sub>, <sup>, <textarea>
+```
 
-## Span Element
+## Div Element:
+The `<div>` element is a block element that is used as a container for other HTML elements.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 9 million inhabitants.</p>
+    </div>
+
+    <div>
+        <h2>Oslo</h2>
+        <p>Oslo is the capital city of Norway.</p>
+        <p>Oslo has over 700,000 inhabitants.</p>
+    </div>
+
+    <div>
+        <h2>Rome</h2>
+        <p>Rome is the capital city of Italy.</p>
+        <p>Rome has over 4 million inhabitants.</p>
+    </div>
+
+</body>
+
+</html>
+```
+
+## Span Element:
+The `<span>` element is an inline element that is used as an inline container to style small parts of text.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p> This is a <span style="color: red;">highlighted</span> word in the sentence. </p>
+</body>
+
+</html>
+```
+
 
 # HTML class Attribute
 
