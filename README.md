@@ -9,10 +9,9 @@
   - [HTML Line Breaks](#html-line-breaks)
 - [HTML Text Formatting:](#html-text-formatting)
 - [HTML Comments:](#html-comments)
-- [HTML Links](#html-links)
-  - [The Target Attribute](#the-target-attribute)
-  - [Image as a Link](#image-as-a-link)
-  - [Email Address as a Link](#email-address-as-a-link)
+- [HTML Links:](#html-links)
+  - [The Target Attribute:](#the-target-attribute)
+  - [Anchor tag with email address:](#anchor-tag-with-email-address)
   - [Anchor Tag with Download Attribute](#anchor-tag-with-download-attribute)
 - [HTML Images](#html-images)
 - [HTML File Path](#html-file-path)
@@ -241,15 +240,178 @@ Comments are not displayed in the browser, but they can help documentation our c
 
 ![alt text](./assets/images/html-comments/html-comments.png)
 
-# HTML Links
+# HTML Links:
+The `<a>` tag defines a link. The most important part of the `<a>` tag is the href (hypertext reference) attribute, which indicates the link’s destination.
 
-## The Target Attribute
+```html
+<!DOCTYPE html>
+<html lang="en">
 
-## Image as a Link
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-## Email Address as a Link
+<body>
+    <a href="https://www.google.com">Google</a>
+</body>
+
+</html>
+```
+
+![alt text](./assets/gif/html-links/link.gif)
+
+**Note:** By default, links will appear as follows in all browsers:
+- An unvisited link is underlined and blue
+- A Visited link is underline and purple
+- An active link is underlined and red
+
+## The Target Attribute:
+By default, when we click on a link, the linked page will open in the current window. If we want to change this behavior, we can use the target attribute in the `<a>` tag to specify where the linked page should open. The target attribute can have one of the following values:
+- _self = Default, open the links in the same window/tab as it was clicked. 
+- _blank = Open the links in a new tab.
+- _parent = Open the links in a Parent Frame.
+- _top = Opens the link in the full window, breaking out of all frames.
+
+```html
+<!-- iframe1.html -->
+<!-- Open this page on live server -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe 1</title>
+</head>
+
+<body style="border: 5px solid red; padding: 20px;">
+
+    <h1 style="color: red;">Main Page (iframe1.html)</h1>
+
+    <iframe src="iframe2.html" width="700" height="500" style="border: 5px solid blue;"></iframe>
+
+</body>
+
+</html>
+```
+
+```html
+<!-- iframe2.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe 2</title>
+</head>
+
+<body>
+    <h2 style="color: blue;">Iframe 2</h2>
+
+    <iframe src="iframe3.html" width="500" height="350" style="border: 5px solid green;"></iframe>
+
+</body>
+
+</html>
+```
+
+```html
+<!-- iframe3.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe 3</title>
+</head>
+
+<body>
+
+    <h2 style="color: green;">Iframe 3</h2>
+
+    <p>Click each link and see which frame changes.</p>
+
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+
+        <a href="https://www.flipkart.com" target="_self" style="border: 3px solid black; padding: 5px;">
+            target="_self"
+        </a>
+
+        <a href="https://www.flipkart.com" target="_blank" style="border: 3px solid black; padding: 5px;">
+            target="_blank"
+        </a>
+
+        <a href="https://www.flipkart.com" target="_parent" style="border: 3px solid black; padding: 5px;">
+            target="_parent"
+        </a>
+
+        <a href="https://www.flipkart.com" target="_top" style="border: 3px solid black; padding: 5px;">
+            target="_top"
+        </a>
+
+    </div>
+
+</body>
+
+</html>
+```
+
+![gif](./assets/gif/html-links/the-target-attribute.gif)
+
+
+## Anchor tag with email address:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="mailto:someone@example.com">Send email</a>
+</body>
+
+</html>
+```
+
+![alt text](./assets/images/html-links/email-as-link.png)
 
 ## Anchor Tag with Download Attribute
+The HTML `<a>` element’s download attribute allows you to specify that the target file should downloaded. This download is particularly useful for offering user the option to download a file (like a PDF, Image, or document) directly when they click a link.
+    
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="assets/images/html-heading/html-heading.png" download>Download</a>
+</body>
+
+</html>
+```    
+
+![gif](./assets/gif/html-links/download-attribute.gif)
+
+Note: We can specify the name of the downloaded file by providing a value for the download attribute:
+- `<a href="assets/al-jazeera.png" download="DownloadFileName">Download</a>`
+
 
 # HTML Images
 
