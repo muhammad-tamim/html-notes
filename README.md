@@ -14,8 +14,7 @@
   - [Anchor tag with email address:](#anchor-tag-with-email-address)
   - [Anchor Tag with Download Attribute](#anchor-tag-with-download-attribute)
 - [HTML Images:](#html-images)
-- [HTML File Path](#html-file-path)
-- [HTML Favicon](#html-favicon)
+- [HTML Favicon:](#html-favicon)
 - [HTML Page Title](#html-page-title)
 - [HTML Tables](#html-tables)
   - [Define an HTML Table](#define-an-html-table)
@@ -436,9 +435,30 @@ The HTML `<img>` tag is used to embed an image in a web page. The `<img>` tag ha
 
 ![alt text](./assets/images/html-images/html-images.png)
 
-# HTML File Path
 
-# HTML Favicon
+# HTML Favicon: 
+A favicon is a small image displayed in the browser tab. As it is a small image, so it should be a simple image with high contrast.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./assets/images/my-photo.png">
+
+</head>
+
+<body>
+
+</body>
+
+</html>
+```
+
+![alt text](./assets/images/html-favicon/html-favicon.png)
 
 # HTML Page Title
 
