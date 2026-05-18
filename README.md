@@ -1,10 +1,10 @@
 <h1 align="center">HTML Notes</h1>
 
-- [HTML Introduction](#html-introduction)
+- [HTML Introduction:](#html-introduction)
   - [What is HTML:](#what-is-html)
   - [A Simple HTML Document:](#a-simple-html-document)
   - [What is an HTML Element, Tag, and Attribute:](#what-is-an-html-element-tag-and-attribute)
-- [HTML Headings](#html-headings)
+- [HTML Headings:](#html-headings)
 - [HTML Paragraph](#html-paragraph)
   - [HTML Paragraph](#html-paragraph-1)
   - [HTML Line Breaks](#html-line-breaks)
@@ -48,7 +48,7 @@
   - [YouTube Autoplay + Mute](#youtube-autoplay--mute)
   - [YouTube Loop](#youtube-loop)
 
-# HTML Introduction
+# HTML Introduction:
 
 ## What is HTML:
 HTML(Hyper Text Markup Language) is the standard markup language for creating web pages. Its element tells the browser how to display the content.
@@ -101,9 +101,36 @@ Note: Some HTML elements have no content and end tag. These elements are called 
 - Tag: A tag in HTML is a piece of code enclosed in angle bracket `<>`, that are used to create elements.
 - Attribute: HTML attributes provide additional information about HTML elements. Attributes are always specified in the start tag and come in name/value pairs like: `name =”value”`.
 
-# HTML Headings
+# HTML Headings:
+HTML Heading are defined with the `<h1>` to `<h6>` tags. `<h1>` defines the most important and `<h6>` defines the least important heading.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+</body>
+
+</html>
+```
+
+![alt text](./assets/images/html-heading/html-heading.png)
 
 # HTML Paragraph
+
+
 
 ## HTML Paragraph
 
