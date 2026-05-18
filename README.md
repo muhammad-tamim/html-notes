@@ -13,7 +13,7 @@
   - [The Target Attribute:](#the-target-attribute)
   - [Anchor tag with email address:](#anchor-tag-with-email-address)
   - [Anchor Tag with Download Attribute](#anchor-tag-with-download-attribute)
-- [HTML Images](#html-images)
+- [HTML Images:](#html-images)
 - [HTML File Path](#html-file-path)
 - [HTML Favicon](#html-favicon)
 - [HTML Page Title](#html-page-title)
@@ -413,7 +413,28 @@ Note: We can specify the name of the downloaded file by providing a value for th
 - `<a href="assets/al-jazeera.png" download="DownloadFileName">Download</a>`
 
 
-# HTML Images
+# HTML Images: 
+The HTML `<img>` tag is used to embed an image in a web page. The `<img>` tag has some attributes: src (source), alt (alternative text), width, height etc.  
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="https://tinyurl.com/4zc3nddb" alt="sunset view" width="300px" height="200px">
+    <img src="assets/images/html-heading/html-heading.png" alt="smiley face">
+</body>
+
+</html>
+```
+
+![alt text](./assets/images/html-images/html-images.png)
 
 # HTML File Path
 
