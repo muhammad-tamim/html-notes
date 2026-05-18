@@ -1,11 +1,9 @@
 <h1 align="center">HTML Notes</h1>
 
 - [HTML Introduction](#html-introduction)
-  - [What is HTML](#what-is-html)
-  - [A Simple HTML Document](#a-simple-html-document)
-  - [What is an HTML Element](#what-is-an-html-element)
-  - [What is an HTML Tag](#what-is-an-html-tag)
-  - [What is an HTML Attribute](#what-is-an-html-attribute)
+  - [What is HTML:](#what-is-html)
+  - [A Simple HTML Document:](#a-simple-html-document)
+  - [What is an HTML Element, Tag, and Attribute:](#what-is-an-html-element-tag-and-attribute)
 - [HTML Headings](#html-headings)
 - [HTML Paragraph](#html-paragraph)
   - [HTML Paragraph](#html-paragraph-1)
@@ -52,14 +50,14 @@
 
 # HTML Introduction
 
-## What is HTML
+## What is HTML:
 HTML(Hyper Text Markup Language) is the standard markup language for creating web pages. Its element tells the browser how to display the content.
 
 **Note:** 
 - Hyper Text = Hyper Text is text with clickable links that take you to other pages or different parts of the same page.
 - Markup Language = Markup Language is a way to write text using special tags and rules that tell a browser how to organize and display the content.
 
-## A Simple HTML Document
+## A Simple HTML Document:
 
 ```html
 <!DOCTYPE html>
@@ -92,9 +90,16 @@ HTML(Hyper Text Markup Language) is the standard markup language for creating we
 - The `<body>` element defines the document’s body, and is a container for all the visible contents.
 
 
-## What is an HTML Element
-## What is an HTML Tag
-## What is an HTML Attribute
+## What is an HTML Element, Tag, and Attribute: 
+- Element: An HTML element is defined by a start tag, some content, and an end tag:
+
+```html
+<tagName>Content goes here</tagName>
+```
+Note: Some HTML elements have no content and end tag. These elements are called empty elements. 
+
+- Tag: A tag in HTML is a piece of code enclosed in angle bracket `<>`, that are used to create elements.
+- Attribute: HTML attributes provide additional information about HTML elements. Attributes are always specified in the start tag and come in name/value pairs like: `name =”value”`.
 
 # HTML Headings
 
