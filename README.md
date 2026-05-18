@@ -61,6 +61,36 @@ HTML(Hyper Text Markup Language) is the standard markup language for creating we
 
 ## A Simple HTML Document
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+      <meta name="description" content="This is a simple HTML document">
+     <meta name="author" content="John Doe"> 
+     -->
+    <title>Page Title</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+```
+
+**here**:
+- The `<!DOCTYPE html>` declaration defines that this document is an HTML5 document
+- The `<html>` element is the root element of an HTML page and the lang attribute defines the language of the page.
+  - Root Element = The root element is the topmost element in a document that contains all the other elements. The `<html>` element is the root element because it wraps all the content of the page, including the `<head>` and `<body>` sections
+- The `<head>` element in HTML is a container for metadata and links to external resources related to the webpage.
+  - Meta information = Meta information is data about the HTML page that isn’t directly visible to users but helps browsers and search engines understand the page better.
+- The `<title>` element specifies a title for the HTML page which is shown the browser’s page’s tab.
+- The `<body>` element defines the document’s body, and is a container for all the visible contents.
+
 
 ## What is an HTML Element
 ## What is an HTML Tag
