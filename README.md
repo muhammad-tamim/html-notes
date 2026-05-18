@@ -25,9 +25,10 @@
   - [Inline Elements](#inline-elements)
   - [Div Element:](#div-element)
   - [Span Element:](#span-element)
-- [HTML class Attribute](#html-class-attribute)
-- [HTML id Attribute](#html-id-attribute)
-- [HTML Iframe](#html-iframe)
+- [HTML Class and ID Attribute:](#html-class-and-id-attribute)
+  - [HTML Class Attribute:](#html-class-attribute)
+  - [HTML id Attribute:](#html-id-attribute)
+  - [Difference Between class and id:](#difference-between-class-and-id)
 - [HTML Semantic Elements](#html-semantic-elements)
 - [HTML Forms](#html-forms)
   - [HTML Form Elements](#html-form-elements)
@@ -745,11 +746,118 @@ The `<span>` element is an inline element that is used as an inline container to
 ```
 
 
-# HTML class Attribute
+# HTML Class and ID Attribute:
 
-# HTML id Attribute
+## HTML Class Attribute:
+The HTML class attribute is used to specify a class for an HTML element. Multiple HTLM elements can share the same class.
 
-# HTML Iframe
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .city {
+            background-color: tomato;
+            color: white;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+    </div>
+
+    <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+    </div>
+</body>
+
+</html>
+```
+
+![alt text](./assets/images/html-class-attribute/html-class-attribute.png)
+
+**Note:**  HTML elements can belong to more than one class. To define multiple classes, separate the class name with a space:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .city {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+        }
+
+        .main {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="city main">London</h2>
+    <h2 class="city">Paris</h2>
+    <h2 class="city">Tokyo</h2>
+</body>
+
+</html>
+```
+
+![alt text](./assets/images/html-class-attribute/html-class-attribute-2.png)
+
+## HTML id Attribute:
+The HTML id attribute is used to specify a unique id for an HTML element. You cannot have more than one element with the same id in an HTML document.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #city {
+            background-color: tomato;
+            color: white;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="city">London</h2>
+</body>
+
+</html>
+```
+
+## Difference Between class and id: 
+
+| class                      | id                          |
+| -------------------------- | --------------------------- |
+| Used for multiple elements | Used for one unique element |
+| Starts with `.` in CSS     | Starts with `#` in CSS      |
+| Can be reused              | Must be unique              |
 
 # HTML Semantic Elements
 
