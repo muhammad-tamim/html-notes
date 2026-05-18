@@ -16,8 +16,7 @@
   - [Anchor tag with email address:](#anchor-tag-with-email-address)
   - [Anchor Tag with Download Attribute](#anchor-tag-with-download-attribute)
 - [HTML Images:](#html-images)
-- [HTML Tables](#html-tables)
-  - [Define an HTML Table](#define-an-html-table)
+- [HTML Tables:](#html-tables)
 - [HTML Lists](#html-lists)
   - [Unordered List](#unordered-list)
   - [Ordered List](#ordered-list)
@@ -484,9 +483,52 @@ The HTML `<img>` tag is used to embed an image in a web page. The `<img>` tag ha
 ![alt text](./assets/images/html-images/html-images.png)
 
 
-# HTML Tables
+# HTML Tables:
 
-## Define an HTML Table
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <caption>Table Data</caption>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Meta</td>
+            <td>Mark Zukerbarg</td>
+            <td>America</td>
+        </tr>
+        <tr>
+            <td>google</td>
+            <td>Lere page</td>
+            <td>America</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
+```
+
+here: 
+- `<table>` = defines a table
+- `<tr>` = defines a table row
+- `<th>` = defines a table header
+- `<td>` = defines a table data or cell
+- `<caption>` = Serves as a heading for the entire table
+
+
+![alt text](./assets/images/html-tables/html-tables.png)
 
 # HTML Lists
 
