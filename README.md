@@ -7,7 +7,7 @@
 - [HTML Headings:](#html-headings)
 - [HTML Paragraph:](#html-paragraph)
   - [HTML Line Breaks](#html-line-breaks)
-- [HTML Text Formatting](#html-text-formatting)
+- [HTML Text Formatting:](#html-text-formatting)
 - [HTML Comments](#html-comments)
 - [HTML Links](#html-links)
   - [The Target Attribute](#the-target-attribute)
@@ -186,7 +186,30 @@ The HTML `<br>` tag defines a line break. Use `<br>` tag if you want a line brea
 
 ![alt text](./assets/images/html-paragraph/line-breaks.png)
 
-# HTML Text Formatting
+# HTML Text Formatting: 
+HTML contains several tags for defining text with a special meaning.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p><strong>Important Text</strong></p>
+    <p><small>Smaller Text</small></p>
+    <p>This is a Subscript text = co<sub>2</sub></p>
+    <p>This is a superscript text = sin<sup>2</sup></p>
+</body>
+
+</html>
+```
+
+![alt text](./assets/images/html-text-formatting/html-text-formatting.png)
 
 # HTML Comments
 
