@@ -4,6 +4,8 @@
   - [What is HTML:](#what-is-html)
   - [A Simple HTML Document:](#a-simple-html-document)
   - [What is an HTML Element, Tag, and Attribute:](#what-is-an-html-element-tag-and-attribute)
+  - [HTML Favicon:](#html-favicon)
+  - [HTML Page Title:](#html-page-title)
 - [HTML Headings:](#html-headings)
 - [HTML Paragraph:](#html-paragraph)
   - [HTML Line Breaks](#html-line-breaks)
@@ -14,8 +16,6 @@
   - [Anchor tag with email address:](#anchor-tag-with-email-address)
   - [Anchor Tag with Download Attribute](#anchor-tag-with-download-attribute)
 - [HTML Images:](#html-images)
-- [HTML Favicon:](#html-favicon)
-- [HTML Page Title](#html-page-title)
 - [HTML Tables](#html-tables)
   - [Define an HTML Table](#define-an-html-table)
 - [HTML Lists](#html-lists)
@@ -97,6 +97,54 @@ Note: Some HTML elements have no content and end tag. These elements are called 
 
 - Tag: A tag in HTML is a piece of code enclosed in angle bracket `<>`, that are used to create elements.
 - Attribute: HTML attributes provide additional information about HTML elements. Attributes are always specified in the start tag and come in name/value pairs like: `name =”value”`.
+
+## HTML Favicon: 
+A favicon is a small image displayed in the browser tab. As it is a small image, so it should be a simple image with high contrast.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./assets/images/my-photo.png">
+
+</head>
+
+<body>
+
+</body>
+
+</html>
+```
+
+![alt text](./assets/images/html-favicon/html-favicon.png)
+
+## HTML Page Title: 
+
+The `<title>` tag adds a title to our page. The title should describe the content and the meaning of the page.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Title</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+```
+
+![alt text](./assets/images/html-title/html-title.png)
+
 
 # HTML Headings:
 HTML Heading are defined with the `<h1>` to `<h6>` tags. `<h1>` defines the most important and `<h6>` defines the least important heading.
@@ -435,32 +483,6 @@ The HTML `<img>` tag is used to embed an image in a web page. The `<img>` tag ha
 
 ![alt text](./assets/images/html-images/html-images.png)
 
-
-# HTML Favicon: 
-A favicon is a small image displayed in the browser tab. As it is a small image, so it should be a simple image with high contrast.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" href="./assets/images/my-photo.png">
-
-</head>
-
-<body>
-
-</body>
-
-</html>
-```
-
-![alt text](./assets/images/html-favicon/html-favicon.png)
-
-# HTML Page Title
 
 # HTML Tables
 
