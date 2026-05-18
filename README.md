@@ -17,9 +17,9 @@
   - [Anchor Tag with Download Attribute](#anchor-tag-with-download-attribute)
 - [HTML Images:](#html-images)
 - [HTML Tables:](#html-tables)
-- [HTML Lists](#html-lists)
-  - [Unordered List](#unordered-list)
-  - [Ordered List](#ordered-list)
+- [HTML Lists:](#html-lists)
+  - [Unordered List:](#unordered-list)
+  - [Ordered List:](#ordered-list)
 - [HTML Block and Inline Elements](#html-block-and-inline-elements)
   - [Block Elements](#block-elements)
   - [Inline Elements](#inline-elements)
@@ -530,11 +530,143 @@ here:
 
 ![alt text](./assets/images/html-tables/html-tables.png)
 
-# HTML Lists
+# HTML Lists:
 
-## Unordered List
+There are two types of lists in HTML:
+- Unordered List
+- Ordered List
 
-## Ordered List
+## Unordered List:
+An unordered list starts with the `<ul>` tag. Each list starts with the `<li>` tag. We can customize the markers for list items using the CSS list-style-type property. it can have one of the following values:
+- disc (default)
+- circle 
+- square
+- none
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <ul style="list-style-type: circle;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <ul style="list-style-type: square;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <ul style="list-style-type: none;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+</body>
+
+</html>
+```
+
+![alt text](./assets/images/html-lists/unordered-list.png)
+
+**Note:** We can further customize list markers using the CSS list-style-image property. This allows us to replace the default marker with an image.
+
+```html
+<ul style="list-style-image: url('image-name.png')">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+```
+
+## Ordered List:
+An ordered list starts with the `<ol>` tag. Each list item stars with the `<li>` tag. With the help of type attribute, it has one of the following values:
+- type = “1” (default)
+- type = “A”
+- type = “a”
+- type = “I”
+- type = “i”
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="A">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="I">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="i">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+</body>
+
+</html>
+```
+
+![alt text](./assets/images/html-lists/order-list.png)
+
+**Note:** By default, an ordered list will start counting form 1. If we want to start counting form a specified number, we can use the start attribute:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ol start="50">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+</body>
+
+</html>
+```
+
+![alt text](./assets/images/html-lists/order-list-2.png)
 
 # HTML Block and Inline Elements
 
