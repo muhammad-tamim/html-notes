@@ -51,8 +51,17 @@
   - [YouTube Loop](#youtube-loop)
 
 # HTML Introduction
+
 ## What is HTML
+HTML(Hyper Text Markup Language) is the standard markup language for creating web pages. Its element tells the browser how to display the content.
+
+**Note:** 
+- Hyper Text = Hyper Text is text with clickable links that take you to other pages or different parts of the same page.
+- Markup Language = Markup Language is a way to write text using special tags and rules that tell a browser how to organize and display the content.
+
 ## A Simple HTML Document
+
+
 ## What is an HTML Element
 ## What is an HTML Tag
 ## What is an HTML Attribute
