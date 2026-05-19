@@ -850,11 +850,11 @@ The HTML id attribute is used to specify a unique id for an HTML element. You ca
 
 # HTML Semantic Elements:
 Semantic elements means Elements with a meaning. It clearly describes its meaning to both the browser and the developer. HTML has several semantic elements that define the different parts of a web page:
-- <header> = Defines a header for a document or a section
-- <nav> = Defines a set of navigation links
-- <section> = Defines a section in a document
-- <aside> = Defines content aside from the content (like a sidebar) 
-- <footer> = Defines a footer for a document or a section
+- `<header>` = Defines a header for a document or a section
+- `<nav>` = Defines a set of navigation links
+- `<section>` = Defines a section in a document
+- `<aside>` = Defines content aside from the content (like a sidebar) 
+- `<footer>` = Defines a footer for a document or a section
 
 ![alt text](./assets/images/html-semantic-element/semantic-element.png)
 
