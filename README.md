@@ -98,7 +98,7 @@ A favicon is a small image displayed in the browser tab. As it is a small image,
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="icon" href="./assets/images/my-photo.png">
+    <link rel="icon" href="./assets/images/my-photo.png" type="image/png">
 
 </head>
 
