@@ -32,16 +32,7 @@
 - [HTML Semantic Elements:](#html-semantic-elements)
 - [HTML Forms:](#html-forms)
   - [Common HTML Form Elements:](#common-html-form-elements)
-- [HTML Video](#html-video)
-  - [The HTML `<video>` Element](#the-html-video-element)
-  - [Autoplay Attribute](#autoplay-attribute)
-- [HTML Audio](#html-audio)
-  - [The HTML `<audio>` Element](#the-html-audio-element)
-  - [Autoplay Attribute](#autoplay-attribute-1)
-- [HTML YouTube Videos](#html-youtube-videos)
-  - [Playing a YouTube Video in HTML](#playing-a-youtube-video-in-html)
-  - [YouTube Autoplay + Mute](#youtube-autoplay--mute)
-  - [YouTube Loop](#youtube-loop)
+- [HTML Video and Audio:](#html-video-and-audio)
 
 # HTML Introduction:
 
@@ -1062,22 +1053,67 @@ The HTML `<form>` element can contain one or more of the following form elements
 ![alt text](./assets/images/html-forms/textarea.png)
 
 
-# HTML Video
+# HTML Video and Audio:
 
-## The HTML `<video>` Element
+```html
+<!DOCTYPE html>
+<html lang="en">
 
-## Autoplay Attribute
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
 
-# HTML Audio
+<body>
 
-## The HTML `<audio>` Element
+    <video width="320px" height="240px" controls>
+        <source src="./assets/video/video.mp4" type="video/mp4">
+        <source src="./assets/video/video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
 
-## Autoplay Attribute
+    <audio controls>
+        <source src="./assets/audio/audio.mp3" type="audio/mp3">
+        <source src="./assets/audio/audio.ogg" type="audio/ogg">
+        Your browser does not support the audio tag.
+    </audio>
 
-# HTML YouTube Videos
+</body>
 
-## Playing a YouTube Video in HTML
+</html>
+```
 
-## YouTube Autoplay + Mute
+![alt text](./assets/images/html-video-and-audio/video-and-audio.png)
 
-## YouTube Loop
+
+**Note:** Chromium browser does not allow autoplay in most cases. However, muted autoplay is always allowed.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+
+    <video width="320px" height="240px" controls autoplay muted>
+        <source src="./assets/video/video.mp4" type="video/mp4">
+        <source src="./assets/video/video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+
+    <audio controls autoplay muted>
+        <source src="./assets/audio/audio.mp3" type="audio/mp3">
+        <source src="./assets/audio/audio.ogg" type="audio/ogg">
+        Your browser does not support the audio tag.
+    </audio>
+
+</body>
+
+</html>
+```

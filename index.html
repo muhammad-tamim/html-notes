@@ -9,44 +9,17 @@
 
 <body>
 
-    <form>
-        <input type="text" placeholder="Your name" autofocus>
-        <!-- automatically focus when the page loads -->
-        <input type="text" maxlength="4" size="1">
-        <input type="search"> <!-- same as text -->
-        <input type="password" required> <!--  form will not submit until this field is filled -->
-        <input type="email">
-        <input type="url">
-        <input type="number">
-        <input type="number" min="0" max="100" step="10" value="30">
-        <input type="date">
-        <input type="date" min="2000-01-02" max="2026-01-02">
-        <input type="file">
-        <input type="file" multiple> <!-- can upload multiple files -->
-        <input type="range">
+    <video width="320px" height="240px" controls autoplay muted>
+        <source src="./assets/video/video.mp4" type="video/mp4">
+        <source src="./assets/video/video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
 
-        <!-- checkbox -->
-        <br><br>
-        <input type="checkbox" id="html">
-        <label for="html">HTML</label>
-        <input type="checkbox" id="css">
-        <label for="css">CSS</label>
-        <input type="checkbox" id="js">
-        <label for="js">JavaScript</label>
-
-        <!-- radio -->
-        <br><br>
-        <input type="radio" name="gender">
-        <label for="gender">Male</label>
-        <input type="radio" name="gender">
-        <label for="gender">Female</label>
-        <input type="radio" name="gender">
-        <label for="gender">Other</label>
-
-        <br><br>
-        <input type="submit">
-        <input type="reset">
-    </form>
+    <audio controls autoplay muted>
+        <source src="./assets/audio/audio.mp3" type="audio/mp3">
+        <source src="./assets/audio/audio.ogg" type="audio/ogg">
+        Your browser does not support the audio tag.
+    </audio>
 
 </body>
 
